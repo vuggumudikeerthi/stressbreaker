@@ -1,116 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js
-"></script>
-    
-    <style>
-* {
-    box-sizing: border-box;
-}
-body {
-    margin:0;
-  font-family: Arial;
-  font-size: 1rem;
-  line-height: 1.5;
-  color:#333;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-
-}
-.content {
-    position: absolute;
-    top:0;
-    left:0;
-    background: rgba(0, 0, 0, 0.75);
-    color: #f1f1f1;
-    width: 100%;
-    height:100vh;
-    padding: 20px;
-    text-align: center;
-    overflow: hidden;
-}
-}
-#myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-}
-#myBtn:hover {
-    background: #ddd;
-    color: black;
-}
-.text
-{
-position:absolute;
-top:30%;
-padding-left:3rem;
-padding-right:3rem;
-}
-.bold-text
-{
-font-size:1rem;
-font-weight:bold;
-}
-button {
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-}
-
-</style>
-</head>
-<body>
-<video src="code.mov" autoplay="true" loop="true"></video>
-
-<div class="content">
-    <div class="text">
-        <h1>STRESS BREAKER</h1>
-
-
-
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js
+    "></script>
         
-        <p>Stress Breaker Applicatin  that gently notifies users to take a break and plays user’s favorite music based on their consent.This application will be incredibly useful for a lot of people who often forget to take breaks and could increase their productivity.</p><br>
-         </p>
-         <p>Check out how I made this app</p><br>
-         <div id=link>
-        <a href="file:///C:/Users/ragha/Desktop/html/stressbreaker-vedio/stressbreaker-document.html">
-        <button><i class="fa fa-angle-down" style="font-size:4rem;color:#f1f1f1"></i></button>
-        </a> </div></div>
+        <style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin:0;
+      font-family: Arial;
+      font-size: 1rem;
+      line-height: 1.5;
+      color:#333;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
 
-
-
-
-</div>
-</div>
-<script>
-var video = document.getElementById("myVideo");
-
-/*---jquery----*/
-$(document).ready(function()
-{
+    }
+    .content {
+        position: absolute;
+        top:0;
+        left:0;
+        background: rgba(0, 0, 0, 0.75);
+        color: #f1f1f1;
+        width: 100%;
+        height:100vh;
+        padding: 20px;
+        text-align: center;
+        overflow: hidden;
+    }
+    }
+    #myBtn {
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+    }
+    #myBtn:hover {
+        background: #ddd;
+        color: black;
+    }
+    .text
+    {
+    position:absolute;
+    top:30%;
+    padding-left:3rem;
+    padding-right:3rem;
+    }
+    .bold-text
+    {
+    font-size:1rem;
+    font-weight:bold;
+    }
     
+    #div1
+    {
+        font-size: 4rem;
+        color:#f1f1f1;
+    }
 
-});
+    </style>
+    </head>
+    <body>
+    <video src="code.mov" autoplay="true" loop="true"></video>
 
-</script>
+    <div class="content">
+        <div class="text">
+            <h1>STRESS BREAKER</h1>
 
-</body>
-</html>
+
+
+            
+            <p>Stress Breaker Applicatin  that gently notifies users to take a break and plays user’s favorite music based on their consent.This application will be incredibly useful for a lot of people who often forget to take breaks and could increase their productivity.</p><br>
+             </p>
+             <p>Check out how I made this app</p><br>
+             <div id=link>
+             <a href="file:///C:/Users/ragha/Desktop/html/stressbreaker-vedio/stressbreaker-document.html">
+            <div id="div1" class="fa"></div>
+            </a> </div></div> 
+
+
+
+
+
+    </div>
+    </div>
+    <script>
+    var video = document.getElementById("myVideo");
+    function chargebattery() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = "&#xf103;";
+  setTimeout(function () {
+      a.innerHTML = "&#xf107;";
+    }, 1000);
+  
+  
+}
+chargebattery();
+setInterval(chargebattery, 5000);
+
+
+
+   
+
+    </script>
+
+    </body>
+    </html>

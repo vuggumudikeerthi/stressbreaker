@@ -5,7 +5,7 @@
 body
 {
   margin:0;
-  font-family: 'san-serif';
+  font-family: Arial;
   font-size: 1rem;
   line-height: 1.5;
   color:#333;
@@ -34,7 +34,8 @@ body
   left: 0;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  
+  
 }
 /* vedio shld be always 100%*/
 .fullscreen-vedio-wrap vedio
