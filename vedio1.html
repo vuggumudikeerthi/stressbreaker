@@ -6,13 +6,18 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js
     "></script>
-        
-        <style>
+    <!--------CSS STYLING ---->   
+
+
+
+    <style>
+    
     * {
         box-sizing: border-box;
-    }
-    body {
-        margin:0;
+      }
+    body 
+    {
+      margin:0;
       font-family: Arial;
       font-size: 1rem;
       line-height: 1.5;
@@ -20,7 +25,8 @@
       overflow-x: hidden;
       overflow-y: hidden;
     }
-    #myVideo {
+    #myVideo 
+    {
         position: fixed;
         right: 0;
         bottom: 0;
@@ -28,7 +34,8 @@
         min-height: 100%;
 
     }
-    .content {
+    .content
+     {
         position: absolute;
         top:0;
         left:0;
@@ -40,8 +47,9 @@
         text-align: center;
         overflow: hidden;
     }
-    }
-    #myBtn {
+    
+    #myBtn 
+    {
         width: 200px;
         font-size: 18px;
         padding: 10px;
@@ -50,22 +58,23 @@
         color: #fff;
         cursor: pointer;
     }
-    #myBtn:hover {
+    #myBtn:hover
+     {
         background: #ddd;
         color: black;
-    }
+     }
     .text
     {
-    position:absolute;
-    top:30%;
-    padding-left:3rem;
-    padding-right:3rem;
-    font-family: Georgia, serif;
+         position:absolute;
+         top:30%;
+         padding-left:3rem;
+         padding-right:3rem;
+         font-family: Georgia, serif;
     }
     .bold-text
     {
-    font-size:1rem;
-    font-weight:bold;
+        font-size:1rem;
+        font-weight:bold;
     }
     
     #div1
@@ -82,13 +91,10 @@
         font-family: "Times New Roman", Times, serif;
     }
 
-    
-
-    </style>
-    </head>
-    <body>
-    <video src="code.mov" autoplay="true" loop="true"></video>
-
+</style>
+</head>
+<body>
+    <video src="code.mov" autoplay="true" loop="true"></video>// for vedio
     <div class="content">
         <div class="text">
             <h1>STRESS BREAKER</h1>
@@ -96,36 +102,36 @@
              </p>
              <p>Check out how I made this app</p><br>
              <div id=link>
-             <a href="file:///C:/Users/ragha/Desktop/html/stressbreaker-vedio/stressbreaker-document.html">
-            <div id="div1" class="fa"></div>
-            </a> </div></div> 
-
-
-
-
-
+                <a href="file:///C:/Users/ragha/Desktop/html/stressbreaker-vedio/stressbreaker-document.html">
+                 <div id="div1" class="fa"></div>
+                 </a> 
+             </div>
+         </div> 
     </div>
     </div>
+
+
+    <!--javascript-->
+
     <script>
     var video = document.getElementById("myVideo");
-    function chargebattery() {
-  var a;
-  a = document.getElementById("div1");
-  a.innerHTML = "&#xf103;";
-  setTimeout(function () {
-      a.innerHTML = "&#xf107;";
-    }, 1000);
-  
-  
-}
-chargebattery();
-setInterval(chargebattery, 5000);
+    function chargebattery()
+    {
+        var a;
+        a = document.getElementById("div1");
+        a.innerHTML = "&#xf103;";
+        setTimeout(function () 
+        {
+        a.innerHTML = "&#xf107;";
+        }, 1000);
+    }
+    chargebattery();
+    setInterval(chargebattery, 5000);
 
 
 
    
 
     </script>
-
-    </body>
-    </html>
+</body>
+</html>
