@@ -47,6 +47,16 @@ body
 .bold-text
 {
 	font-weight: bold;
+
+}
+.textShadow
+{
+	text-shadow:2px 2px 5px grey;
+
+}
+.red
+{
+	color:red;
 }
 .space
 {
